@@ -1,90 +1,88 @@
 <!DOCTYPE html>
 <html>
-<body>
+	<body>
+	<h1></h1>
+	<p></p>
+	<br>
+	<img src="http://latex.codecogs.com/gif.latex?%5Cdpi%7B200%7D%203x%5E%7B2%7D%20&plus;%202x%5E%7B2%7D%5Cleft%20%28%204&plus;3%20%5Cright%20%29" alt="LaTeX Representation Image">
+	<br>
+	LaTeX String: 
+	<br>
+	<input type="text" id="latex string" size="92" value="3x^{2} + 2x^{2}\left ( 4+3 \right )">
+	<br>
+	<button style="width:588px;height:25px" onClick="solve()">Solve</button>
+	<br>
+	System Log
+	<br>
+	<textarea id="SystemLog" rows="4" cols="70">
 
-<h1></h1>
-<p></p>
-<br>
-<img src="http://latex.codecogs.com/gif.latex?%5Cdpi%7B200%7D%203x%5E%7B2%7D%20&plus;%202x%5E%7B2%7D%5Cleft%20%28%204&plus;3%20%5Cright%20%29" alt="LaTeX Representation Image">
-<br>
-LaTeX String: 
-<br>
-<input type="text" id="latex string" size="92" value="3x^{2} + 2x^{2}\left ( 4+3 \right )">
-<br>
-<button style="width:588px;height:25px" onClick="solve()">Solve</button>
-<br>
-System Log
-<br>
-<textarea id="SystemLog" rows="4" cols="70">
+	</textarea>
+	<br>
+	<br>
+	Addition & Subtraction
+	<br>
+	<textarea  id="Addition & Subtraction" rows="4" cols="70">
 
-</textarea>
-<br>
-<br>
-Addition & Subtraction
-<br>
-<textarea  id="Addition & Subtraction" rows="4" cols="70">
+	</textarea>
+	<br>
+	Multiplication & Division
+	<br>
+	<textarea id="Multiplication & Division" rows="4" cols="70">
 
-</textarea>
-<br>
-Multiplication & Division
-<br>
-<textarea id="Multiplication & Division" rows="4" cols="70">
+	</textarea>
+	<br>
+	Exponentiation & Parentheses 
+	<br>
+	<textarea id="Exponentiation & Parentheses" rows="4" cols="70">
 
-</textarea>
-<br>
-Exponentiation & Parentheses 
-<br>
-<textarea id="Exponentiation & Parentheses" rows="4" cols="70">
+	</textarea>
+	<br>
+	Some Function
+	<br>
+	<textarea id="Some Function1" rows="4" cols="70">
 
-</textarea>
-<br>
-Some Function
-<br>
-<textarea id="Some Function1" rows="4" cols="70">
+	</textarea>
+	<br>
+	Some Function
+	<br>
+	<textarea id="Some Function2" rows="4" cols="70">
 
-</textarea>
-<br>
-Some Function
-<br>
-<textarea id="Some Function2" rows="4" cols="70">
+	</textarea>
+	<br>
+	Some Function
+	<br>
+	<textarea id="Some Function3" rows="4" cols="70">
 
-</textarea>
-<br>
-Some Function
-<br>
-<textarea id="Some Function3" rows="4" cols="70">
+	</textarea>
 
-</textarea>
+	<script>
+		var latex_string;
+		latex_string = document.getElementById('latex string').value;
 
-<script>
-var latex_string;
-latex_string = document.getElementById('latex string').value;
-
-function system_log()
-{
-	for (var n ) 
-	document.getElementById('SystemLog').value = latex_string.split("+");
-}
-function as()
-{
-	document.getElementById("Addition & Subtraction").value = "Fuck";
-}
-function md()
-{
-	document.getElementById("Multiplication & Division").value = "Yourself";
-}
-function ep()
-{
-	document.getElementById("Exponentiation & Parentheses").value = "Douchebag";
-}
-function solve()
-{
-	system_log();
-	as();
-	md();
-	ep();
-}
-</script>
-
+		function system_log()
+		{
+			for (var n ) 
+			document.getElementById('SystemLog').value = latex_string.split("+");
+		}
+		function as()
+		{
+			document.getElementById("Addition & Subtraction").value = "Fuck";
+		}
+		function md()
+		{
+			document.getElementById("Multiplication & Division").value = "Yourself";
+		}
+		function ep()
+		{
+			document.getElementById("Exponentiation & Parentheses").value = "Douchebag";
+		}
+		function solve()
+		{
+			system_log();
+			as();
+			md();
+			ep();
+		}
+	</script>
 </body>
 </html> 
